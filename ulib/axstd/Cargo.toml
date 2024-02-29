@@ -33,6 +33,7 @@ alloc = ["arceos_api/alloc", "axfeat/alloc", "axio/alloc"]
 alloc-tlsf = ["axfeat/alloc-tlsf"]
 alloc-slab = ["axfeat/alloc-slab"]
 alloc-buddy = ["axfeat/alloc-buddy"]
+alloc-new = ["axfeat/alloc-new"]
 paging = ["axfeat/paging"]
 tls = ["axfeat/tls"]
 
@@ -74,3 +75,4 @@ arceos_api = { path = "../../api/arceos_api" }
 axio = { path = "../../crates/axio" }
 axerrno = { path = "../../crates/axerrno" }
 spinlock = { path = "../../crates/spinlock" }
+hashbrown = { version = "0.14", default-features = false }

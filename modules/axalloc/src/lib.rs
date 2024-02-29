@@ -26,6 +26,8 @@ pub use page::GlobalPage;
 cfg_if::cfg_if! {
     if #[cfg(feature = "slab")] {
         use allocator::SlabByteAllocator as DefaultByteAllocator;
+    } else if #[cfg(feature = "new")] {
+        use allocator::MyNewAllocator as DefaultByteAllocator;
     } else if #[cfg(feature = "buddy")] {
         use allocator::BuddyByteAllocator as DefaultByteAllocator;
     } else if #[cfg(feature = "tlsf")] {

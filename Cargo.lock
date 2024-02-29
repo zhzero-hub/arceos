@@ -31,6 +31,7 @@ dependencies = [
  "rand",
  "rlsf",
  "slab_allocator",
+ "talc",
 ]
 
 [[package]]
@@ -471,6 +472,7 @@ dependencies = [
  "axerrno",
  "axfeat",
  "axio",
+ "hashbrown",
  "spinlock",
 ]
 
@@ -1790,6 +1792,15 @@ dependencies = [
  "proc-macro2",
  "quote",
  "unicode-ident",
+]
+
+[[package]]
+name = "talc"
+version = "4.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "104ca9cfd3d275985ac58560d407af681a790d11495f042faaab2af69f63c11a"
+dependencies = [
+ "lock_api",
 ]
 
 [[package]]
